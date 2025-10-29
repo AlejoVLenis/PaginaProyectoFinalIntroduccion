@@ -9,6 +9,7 @@ nav ul {
     gap: 10px;
     justify-content: right;
     margin: 20px;
+    
 }
 
 li {
@@ -30,8 +31,8 @@ nav a {
 }
 
 .opciones-recomendaciones img {
-    width: 250px;
-    height: 230px;
+    width: 350px;
+    height: 350px;
 }
 
 header {
@@ -45,34 +46,67 @@ header {
 h2 {
     text-align: center;
     padding: 30px;
+    margin: 10rem;
+    font-size: 2.5rem;
 }
 
 .contenedor-recomendaciones {
     display: flex;
     justify-content: center;
     object-fit: contain;
+    
 }
 
 .opciones-recomendaciones p {
     text-align: center;
     font-weight: bold;
-    margin: 10px
+    margin: 10px;
 }
 
 .opciones-recomendaciones {
     border: 2px solid #f56;
     margin: 15px;
+    
 }
 
 .panel-entrada {
     display: flex;
     height: 80vh;
     align-items: center;
-    background: linear-gradient(270deg, #fff 0%, #f54 100%);
+    background: linear-gradient(270deg, #e67 0%, #f54 100%);
+    margin-bottom: 10rem;
 }
 
 .panel-entrada h1 {
     text-align: center;
     margin: 5rem;
     color: #fff;
+}
+
+.ofertas-destacadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.opcion-oferta p{
+    margin: 5px;
+}
+footer{
+    padding: 5rem;
+    background-color: #f54;
+    color:#fff;
+}
+.opcion-oferta{
+    border: 2px solid #f56;
+    
+}
+.opcion-oferta img{
+    margin: 2rem;
+    border-bottom: 2px solid #f54;
+}
+.texto-oferta{
+    margin: 2rem;
 }
