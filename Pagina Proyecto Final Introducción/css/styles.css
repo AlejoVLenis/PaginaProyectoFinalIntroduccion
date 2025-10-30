@@ -31,8 +31,8 @@ nav a {
 }
 
 .opciones-recomendaciones img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 header {
@@ -109,4 +109,7 @@ footer{
 }
 .texto-oferta{
     margin: 2rem;
+}
+@media (max-width: 992px){
+    
 }
