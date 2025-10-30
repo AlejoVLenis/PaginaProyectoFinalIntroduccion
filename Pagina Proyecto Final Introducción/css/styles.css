@@ -45,15 +45,14 @@ header {
 
 h2 {
     text-align: center;
-    padding: 30px;
-    margin: 10rem;
+    margin: 1rem;
     font-size: 2.5rem;
 }
 
 .contenedor-recomendaciones {
     display: flex;
     justify-content: center;
-    object-fit: contain;
+    object-fit: cover;
     
 }
 
@@ -65,7 +64,10 @@ h2 {
 
 .opciones-recomendaciones {
     border: 2px solid #f56;
-    margin: 15px;
+    margin: auto auto 5rem;
+    width: 250px;
+    align-items: center;
+    
     
 }
 
@@ -87,7 +89,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     margin-bottom: 5rem;
 }
 
@@ -104,12 +106,44 @@ footer{
     
 }
 .opcion-oferta img{
-    margin: 2rem;
+    margin: 1rem;
     border-bottom: 2px solid #f54;
 }
 .texto-oferta{
     margin: 2rem;
 }
 @media (max-width: 992px){
-    
+  .contenedor-recomendaciones{
+    flex-wrap: wrap;
+  }
+  .ofertas-destacadas{
+    flex-wrap: wrap;
+  }
+}
+@media(max-width: 768px){
+     header {
+        position: relative;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .ofertas-destacadas{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contenedor-recomendaciones{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .h2{
+        padding: 5px;
+        margin: 5px;
+        color:#f54;
+    }
 }
