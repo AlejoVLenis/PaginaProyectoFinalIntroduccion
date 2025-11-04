@@ -52,8 +52,7 @@ h2 {
 .contenedor-recomendaciones {
     display: flex;
     justify-content: center;
-    
-    
+    box-sizing: border-box;
     
 }
 
@@ -182,8 +181,9 @@ footer{
 .btn-curso{
     padding: 15px;
     margin: 10px;
-    border: 1px solid black;
+    border: none;
     cursor: pointer;
+    width: 150px;
 }
 .opcion-lista img{
     border-radius: 5%;
@@ -196,4 +196,59 @@ footer{
 }
 .opcion-titulo{
     text-align: center;
+}
+.oferta-empleo{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border: 2px solid #000;
+    padding: 30px;
+}
+.oferta-texto{
+    margin: 15px;
+}
+.oferta-empleo p{
+    margin: 20px;
+    
+}
+.contenedor-ofertas{
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+.btn-empleo{
+    padding: 15px;
+    background-color: #eee;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f54;
+    width: 60%;
+    margin: auto auto 15rem;
+    width: 550px;
+    padding: 45px;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px solid black;
+}
+form input{
+    margin: 15px;
+    padding: 10px;
+    width: 85%;
+}
+form p {
+    text-align: left;
+}
+textarea{
+    padding: 25px;
+    width: 81%;
+    height: 150px;
+    margin: 10px;
+}
+input[type="submit"]{
+    width: 25%;
+    margin: auto;
 }
