@@ -9,8 +9,14 @@ let textoError = document.querySelector(".error");
 let menu = document.querySelector(".menu-mobil");
 let menuNav = document.querySelector("nav");
 let menuActive = false;
-
-
+let btnCursos = document.querySelectorAll(".btn-curso");
+    btnCursos.forEach(element => {
+        element.addEventListener("click", function(){
+            console.log("boton presionado");
+            window.open("https://www.youtube.com/watch?v=Z6GGAQOMX8c&t=58s")
+        })
+    })
+    btnCursos.addEventListener("click")
     if(menu && menuActive == false){
         menu.addEventListener('click', function(){
             menuNav.classList.toggle('active');
@@ -67,6 +73,8 @@ btnBuscar.addEventListener("click", function() {
     
     
 });
+
+
 
 
 
