@@ -31,8 +31,8 @@ nav a {
 }
 
 .opciones-recomendaciones img {
-    width: 250px;
-    height: 250px;
+    width: 310px;
+    height: 280px;
 }
 
 header {
@@ -41,6 +41,18 @@ header {
     align-items: center;
     background-color: #f54;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.menu-mobil{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.menu-mobil span{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
 }
 
 h2 {
@@ -67,10 +79,14 @@ h2 {
 .opciones-recomendaciones {
     border: 2px solid #f56;
     margin: auto auto 5rem;
-    width: 250px;
+    width: 310px;
+    height: auto;
     align-items: center;
-    
-    
+    box-shadow: 5px 5px 6px gray;
+    transition: 0.2s ease;
+}
+.opciones-recomendaciones:hover{
+    transform: translateY(-20px);
 }
 
 .panel-entrada {
@@ -93,10 +109,12 @@ h2 {
     align-items: center;
     gap: 2rem;
     margin-bottom: 5rem;
+    
 }
 
 .opcion-oferta p{
     margin: 5px;
+
 }
 footer{
     padding: 5rem;
@@ -105,7 +123,11 @@ footer{
 }
 .opcion-oferta{
     border: 2px solid #f56;
-    
+    box-shadow: 5px 5px 6px black;
+    transition: 0.2s ease;
+}
+.opcion-oferta:hover{
+    transform: translateY(-20px);
 }
 .opcion-oferta img{
     margin: 1rem;
@@ -152,6 +174,20 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .oferta-empleo{
+        display: flex;
+        flex-direction: column;
+    }
+    form p{
+        font-size: 12px;
+    }
+    input{
+        font-size: 10px;
+    }
+    .menu-mobil{
+        display: flex;
+    }
+    
 }
 @media(min-width: 1920px) {
     .opciones-recomendaciones{
@@ -203,6 +239,7 @@ footer{
     margin: 50px;
     border: 2px solid #000;
     padding: 30px;
+    width: 80%;
 }
 .oferta-texto{
     margin: 15px;
@@ -215,40 +252,88 @@ footer{
     border: 2px solid black;
     padding: 50px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btn-empleo{
     padding: 15px;
     background-color: #eee;
+    transition: 0.2s ease;
+}
+.btn-empleo:hover{
+    padding: 20px;
+    color: #f00;
+    border: 2px solid #f00;
+    
 }
 form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: #f54;
-    width: 60%;
-    margin: auto auto 15rem;
-    width: 550px;
+    width: 70%;
+    margin: 10rem auto 15rem;
+    height: auto;
     padding: 45px;
     color: #fff;
     box-sizing: border-box;
-    box-shadow: 0 0 15px solid black;
+    box-shadow: 5px 5px 9px black;
+}
+form p{
+    width: 80%;
+    text-align: left;
+    color: white;
+    margin: 10px 0 5px 5px;
+    font-weight: bold;
 }
 form input{
     margin: 15px;
     padding: 10px;
-    width: 85%;
+    width: 80%;
+    border-radius: 14px;
+    border-color: #f00;
 }
-form p {
-    text-align: left;
-}
+
 textarea{
     padding: 25px;
-    width: 81%;
+    width: 78%;
     height: 150px;
     margin: 10px;
 }
 input[type="submit"]{
-    width: 25%;
+    width: 30%;
     margin: auto;
+}
+input[type="search"]{
+    width: 60%;
+    padding: 10px;
+    
+}
+.btn-buscar{
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+}
+.error{
+    color: #f00;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: 0.2s ease;
+    background-color: #eee;
+}
+.active a{
+    color: #000;
+    width: 100%;
+    
+}
+.active ul {
+    flex-direction: column;
+    justify-content: center;
+    
 }

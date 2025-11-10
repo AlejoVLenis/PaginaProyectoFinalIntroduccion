@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAO Empleos</title>
+    <title>Starting Point</title>
 </head>
 
 <body>
@@ -21,18 +21,26 @@
                 <li><a href="ofertas.html">Ofertas</a></li>
             </ul>
         </nav>
-       
+         <div class="menu-mobil">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <main>
      <div class="panel-entrada">
             <h1>Bienvenido a la Sección de Ofertas</h1>
         </div>
+        
         <section class="contenedor-ofertas">
-            <div class="oferta-empleo">
+            <input type="search" class="searchBar" placeholder="🔍Buscar">
+            <button class="btn-buscar">Iniciar Busqueda</button>
+            <p class="error"></p>
+            <div class="oferta-empleo" id="ingeniero-informatico">
                 <div class="img-container">
                     <img src="img/amazon-icon-4.png" alt="logo Emcali">
                 </div>
-            <div class="oferta-texto">
+            <div class="oferta-texto" >
                 <p><b>Empresa:</b> Amazon</p>
                 <p><b>Profesión:</b> Ingeniero Informático</p>
                 <p><b>Sueldo:</b> 7.500.000</p>
@@ -41,7 +49,7 @@
             </div>
                 <button class="btn-empleo">Aplicar Al empleo</button>
             </div>
-            <div class="oferta-empleo">
+            <div class="oferta-empleo" id="ingeniero-ambiental">
                 <div class="img-container">
                     <img src="img/logo-ecopetrol-256x256.png" alt="logo Emcali">
                 </div>
@@ -54,7 +62,7 @@
             </div>
                 <button class="btn-empleo">Aplicar Al empleo</button>
             </div>
-            <div class="oferta-empleo">
+            <div class="oferta-empleo" id="ingeniero-mecanico">
                 <div class="img-container">
                     <img src="img/logo-chevrolet.webp" alt="logo Emcali">
                 </div>
@@ -71,7 +79,7 @@
                 <div class="img-container">
                     <img src="img/logoEmcali.avif" alt="logo Emcali">
                 </div>
-            <div class="oferta-texto">
+            <div class="oferta-texto" id="Ingeniero-electrico">
                 <p><b>Empresa:</b> Emcali</p>
                 <p><b>Profesión:</b> Ingeniero Eléctrico</p>
                 <p><b>Sueldo:</b> 5.200.000</p>
@@ -83,7 +91,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; UAO empleos todos los derechos reservados</p>
+        <p>&copy; Starting Point todos los derechos reservados</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
